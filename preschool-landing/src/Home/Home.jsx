@@ -14,12 +14,9 @@ function Home() {
                 <div className="content">
                     <div className="text_wrapper">
                         <h1>Онлайн-платформа для <span className="yellow-text">дошкольного</span> образования</h1>
-                        
                             <span>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </span>
-                        
-                        {/* <img src={imgArrow} alt="arrow" className="img-arrow" /> */}
                     </div>
                     <div className="content-wrapper">
                     <img src={imgArrow} alt="arrow" className="img-arrow" />
@@ -33,7 +30,6 @@ function Home() {
                             </div>
                             
                         </div>
-                    {/* <img src={imgArrow} alt="arrow" className="img-arrow" /> */}
                     </div>
                 </div>
                 
