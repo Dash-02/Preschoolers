@@ -5,6 +5,7 @@
     align-items: center;
     height: 65px;
     width: 85%;
+
     position: fixed;
     z-index: 50;
 }
@@ -15,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     z-index: 100;
 }
 
@@ -261,6 +262,9 @@ a:active {
     .logo {
         width: 55%;
     }
+    .btn-login button {
+        font-size: 11px;
+    }
 }
 
 @media (width <= 1080px) {
@@ -289,6 +293,13 @@ a:active {
 }
 
 @media (width <= 720px) {
+    .container-header {
+        position: fixed;
+        z-index: 50;
+    }
+    .header {
+        z-index: 100;
+    }
     nav {
         display: none;
     }
@@ -323,13 +334,20 @@ a:active {
     }
 }
 
+@media (width <= 450px) {
+    .logo {
+        width: 45%;
+        button {
+            width: 100px;
+        }
+    }
+}
+
 @media (width <= 320px) {
     .logo {
-        width: 40%;
-    }
-    .btn-logo {
-        width: 90px;
-        height: 25px;
+        button {
+            width: 100px;
+        }
     }
     .menu-items {
         margin-top: 25%;

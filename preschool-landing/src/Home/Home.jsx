@@ -15,7 +15,7 @@ function Home() {
                     <div className="text_wrapper">
                         <h1>Онлайн-платформа для <span className="yellow-text">дошкольного</span> образования</h1>
                             <span>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Добро пожаловать на нашу платформу "Дай пять", где процесс обучения становится увлекательным и эффективным для самых маленьких. Мы предлагаем уникальные тесты и материалы, разработанные специально для дошкольного образования. Наши уроки помогут детям развивать навыки, осваивать новые знания и готовиться к школе, играя и веселясь. Давайте вместе откроем великий мир обучения!
                             </span>
                     </div>
                     <div className="content-wrapper">
