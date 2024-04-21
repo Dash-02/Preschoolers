@@ -1,0 +1,58 @@
+.parents {
+    background: linear-gradient(to bottom, #6C8AD5, #8BC0FF);
+    height: 100vh;
+
+    color: #fff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    flex-direction: row;
+}
+
+.card {
+    width: 310px;
+    height: 450px;
+
+    background: linear-gradient(to bottom, #8BC0FF, #F671EB);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.card-line {
+    width: 50%;
+    height: 2px;
+    background-color: #FFEE73;
+}
+
+.banner {
+    background: linear-gradient(to right, #D660CC, #9F4CEB);
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    width: 70%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width <= 1500px) {
+    .banner {
+        
+    }
+    
+    .banner span {
+        font-size: 12px;
+    }
+}

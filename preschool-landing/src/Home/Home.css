@@ -1,0 +1,165 @@
+.home {
+    background: linear-gradient(to bottom, #8BC0FF, #6C8AD5);
+    height: 100vh;
+
+    color: #fff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 40%;
+    height: 50%;
+    
+    font-size: 18px;
+}
+
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.text_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.img-arrow {
+    width: 125px;
+    height: 162px;
+}
+
+.yellow-text {
+    color: #FFEDB5;
+}
+
+.wrapper_social_media {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60%;
+    height: 25%;
+
+    margin-top: 10%;
+}
+
+.wrapper_social_media button {
+    font-size: 24px;
+
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        margin-left: 10px;
+    }
+}
+
+@media (width <= 1500px) {
+    .wrapper_social_media button {
+        font-size: 22px;
+    }
+    .img-arrow {
+        margin-top: 5%;
+    }
+}
+
+@media (width <= 1200px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .img-books {
+        height: 600px;
+        width: 560px;
+    }
+    .text_wrapper {
+        font-size: 16px;
+    }
+    .img-arrow {
+        margin-top: 1%;
+    }
+}
+
+@media (width <= 1080px) {
+    h1 {
+        font-size: 40px;
+    }
+    .content-wrapper button {
+        font-size: 18px;
+    }
+    .content-wrapper {
+        font-size: 16px;
+    }
+    .img-arrow {
+        width: 105px;
+        height: 142px;
+    }
+}
+
+@media (width <= 720px) {
+    .content {
+        width: 80%;
+        height: 40%;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .img-arrow {
+        width: 85px;
+        height: 122px;
+    }
+    .content-wrapper button {
+        font-size: 14px;
+
+        width: 80%;
+    }
+}
+
+@media (width <= 560px) {
+    .img-books {
+        height: 440px;
+        width: 400px;
+    }
+}
+
+@media (width <= 320px) {
+    .content {
+        width: 40%;
+        height: 50%;
+        
+        font-size: 9px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .img-books {
+        height: 360px;
+        width: 300px;
+    }
+}

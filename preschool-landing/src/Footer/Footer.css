@@ -1,0 +1,47 @@
+.footer {
+    background: #282846;
+    height: 80vh;
+
+    color: #fff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    font-size: 12px;
+}
+
+.footer a {
+    font-size: 12px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.discription {
+    
+    flex-wrap: wrap;
+}
+
+.about-platform {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    
+    flex-wrap: wrap;
+}
+
+.underLine {
+    text-decoration-line: underline;
+}
+
+.footer-line {
+    width: 85%;
+    height: 1px;
+    background-color: #fff;
+}

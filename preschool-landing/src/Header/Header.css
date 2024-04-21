@@ -1,0 +1,312 @@
+.container-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 65px;
+    width: 85%;
+    position: fixed;
+    z-index: 50;
+}
+
+.header {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.container-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:#8BC0FF;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.24);
+    border-radius: 0px 0px 10px 10px;
+
+    padding: 0 5px;
+}
+
+.img-logo {
+    width: 45px;
+    height: 45px;
+}
+
+button {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    color: #fff;
+
+    background: linear-gradient(to right, #D660CC, #9F4CEB);
+    border-style: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+button:hover {
+    filter: brightness(0.94);
+}
+  
+button:active {
+    filter: brightness(1.09);
+}
+
+.btn-logo {
+    width: 140px;
+    height: 25px;
+}
+
+.btn-login button {
+    width: 47%;
+    height: 35px;
+}
+
+.btn-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 150%;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    transition: filter 0.3s;
+}
+
+a:hover {
+    color: #fcef8d;
+}
+  
+a:active {
+    filter: brightness(1.3);
+}
+
+/* .line {
+    height: 2px;
+    width: 100%;
+
+    opacity: 24%;
+    background-color: #fff;
+} */
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #fff;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+}
+
+.menu-list {
+    z-index: 1;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background: #263A7A;
+    transform: translateX(100%);
+    transition: .4s;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin-top: 15%;
+}
+
+.menu-bottom {
+    background-color: #8BC0FF;
+    width: 100%;
+    height: 12%;
+}
+
+.menu-list a {
+    font-size: 28px;
+}
+
+.menu-list button {
+    border-radius: 15px;
+    font-size: 24px;
+    width: 70%;
+    height: 12%;
+}
+
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+}
+
+@media (width > 1900px) {
+    .btn-login button {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .logo {
+        button {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (width > 720px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (width <= 1500px) {
+    .btn-login button {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 42%;
+    }
+
+    .logo button {
+        width: 120px;
+    }
+}
+
+@media (width <= 1200px) {
+    .btn-login button {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 55%;
+    }
+}
+
+@media (width <= 1080px) {
+    .container-header {
+        width: 100%;
+    }
+
+    .container-header::before {
+        border-radius: 0px;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 50%;
+        button {
+            font-size: 13px;
+        }
+    }
+    
+    a {
+        font-size: 13px;
+    }
+}
+
+@media (width <= 720px) {
+    nav {
+        display: none;
+    }
+    .btn-login {
+        display: none;
+    }
+
+    .logo {
+        width: 25%;
+    }   
+}
+
+@media (width <= 320px) {
+    .logo {
+        width: 40%;
+    }
+    .btn-logo {
+        width: 90px;
+        height: 25px;
+    }
+}
