@@ -40,7 +40,7 @@ function Parents() {
 
                     <div className="card">
                     <div className="card-wrapper">
-                            <img src={imgAcadem} alt="card" />
+                            <img className="img-academ" src={imgAcadem} alt="card" />
                             <div className="card-line"></div>
                         </div>
                         <div className="card-text">
