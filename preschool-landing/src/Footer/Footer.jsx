@@ -14,25 +14,29 @@ function Footer() {
         <section className="footer">
             <h1>Свяжитесь с <span className="yellow-text">нами</span></h1>
             <div className="footer-container">
+                
                 <article className="discription">
-                    <div className="logo">
-                        <img src={imgLogo} alt="logo" />
-                        <p>Дай пять</p>
+                    <div className="logo-footer">
+                        <div className="inner_logo">
+                            <img src={imgLogo} alt="logo" />
+                            <span>Дай пять</span>
+                        </div>
+                    <span>Современная платформа дошкольного онлайн-образования</span>
                     </div>
-                    <p>Современная платформа дошкольного онлайн-образования</p>
-                    <div className="user">
+                    <div className="disc">
                         <img src={imgUser} alt="user" />
-                        <p className="underLine">Личный кабинет</p>
+                        <a className="underLine" href="#">Личный кабинет</a>
                     </div>
-                    <div className="tg">
+                    <div className="disc">
                         <img src={imgTg} alt="tg" />
-                        <p className="underLine">Написать в Telegram</p>
+                        <a className="underLine" href="#">Написать в Telegram</a>
                     </div>
-                    <div className="whatsapp">
+                    <div className="disc">
                         <img src={imgWhApp} alt="whatsapp" />
-                        <p className="underLine">Написать в WhatsApp</p>
+                        <a className="underLine" href="#">Написать в WhatsApp</a>
                     </div>
                 </article>
+
                 <article className="about-platform">
                     <p>О платформе</p>
                     <a href="#home">Главная</a>
@@ -40,27 +44,29 @@ function Footer() {
                     <a href="#preschoolers">Детям</a>
                     <a href="#teacher">Преподавателям</a>
                 </article>
+
                 <article className="contacts">
-                    <div className="location">
+                    <div className="cont">
                         <img src={imgLocation} alt="location" />
-                        <p>Адрес: 292929 Россия, Город, Улица 123</p>
+                        <span>Адрес: 292929 Россия, Город, Улица 123</span>
                     </div>
-                    <div className="email">
+                    <div className="cont">
                         <img src={imgEmail} alt="email" />
-                        <p>Email: example@email.ru</p>
+                        <span>Email: example@email.ru</span>
                     </div>
-                    <div className="phone">
+                    <div className="cont">
                         <img src={imgPhone} alt="phone" />
-                        <p>Телефон: +7 (000) 000-00-00</p>
+                        <span>Телефон: +7 (000) 000-00-00</span>
                     </div>
-                    <div className="website">
+                    <div className="cont">
                         <img src={imgWebsite} alt="website" />
-                        <p>Сайт разработан: https://amexwebdev.vercel.app/</p>
+                        <span>Сайт разработан: https://amexwebdev.vercel.app/</span>
                     </div>
                 </article>
+
             </div>
             <div className="footer-line"></div>
-            <p>© 2024 Дай пять</p>
+            <span>© 2024 Дай пять</span>
         </section>
     )
 }
