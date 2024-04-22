@@ -25,7 +25,7 @@ function Footer() {
                     </div>
                     <div className="disc">
                         <img src={imgUser} alt="user" />
-                        <a className="underLine" href="#">Личный кабинет</a>
+                        <a className="underLine" href="https://deploy-panel-for-learn.vercel.app/login">Личный кабинет</a>
                     </div>
                     <div className="disc">
                         <img src={imgTg} alt="tg" />
