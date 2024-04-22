@@ -1,3 +1,3 @@
 window.env = {
-  "BACKEND_URL": "http://localhost:4444"
+  "BACKEND_URL": "https://backend-for-online-school.onrender.com"
 };

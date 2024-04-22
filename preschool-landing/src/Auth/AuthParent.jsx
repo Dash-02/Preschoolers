@@ -3,7 +3,8 @@ import './AuthParent.css';
 import imgMom from '../assets/img/auth/mom.png';
 import imgDad from '../assets/img/auth/dad.png';
 import axios from "axios";
-import env from 'react-dotenv'
+import env from 'react-dotenv';
+
 function AuthParent() {
     const [formData, setFormData] = useState({
         fullName: '',
