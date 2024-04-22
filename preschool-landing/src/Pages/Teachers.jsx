@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import './Teachers.css';
+import AuthTeacher from '../Auth/AuthTeacher.jsx';
+
 import imgMan from '../assets/img/man.png';
-import imgMan2 from '../assets/img/man2.png';
 import imgMark from '../assets/icons/mark_check.svg';
+import imgMan2 from '../assets/img/man2.png';
+
+import imgX from '../assets/img/auth/x.svg';
 
 function Teacher() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+  const openPopupT = () => {
+    setIsOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsOpen(false);
+  };
+
     return (
         <section id="teacher" className="teacher">
             <div className="teacher-text">
@@ -36,11 +51,23 @@ function Teacher() {
                 </div>
                 </div>
                 <div className="author">
-                    <button className="btn-author">
+                    <button className="btn-author" onClick={openPopupT}>
                         Стать соавтором
                     </button>
                     <img className="man2" src={imgMan2} alt="man2" />
                 </div>
+            </div>
+            <div>
+            {isOpen && (
+                <div className="backdrop">
+                <div id="popup">
+                    <button className="btn-x" onClick={closePopup}>
+                        <img src={imgX} alt="x" />
+                    </button>
+                    <AuthTeacher />
+                </div>
+                </div>
+            )}
             </div>
         </section>
     )

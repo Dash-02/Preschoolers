@@ -60,7 +60,7 @@ function Footer() {
                     </div>
                     <div className="cont">
                         <img src={imgWebsite} alt="website" />
-                        <span>Сайт разработан: https://amexwebdev.vercel.app/</span>
+                        <span>Сайт разработан: <a href="https://amexwebdev.vercel.app/">amexwebdev</a></span>
                     </div>
                 </article>
 

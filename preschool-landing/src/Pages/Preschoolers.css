@@ -104,6 +104,16 @@ h1 {
     img {
         width: 80%;
     }
+    .schema {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .round-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 @media (width <= 1200px) {
@@ -119,8 +129,8 @@ h1 {
     }
     .schema {
         display: flex;
-    align-items: center;
-    justify-content: space-around;
+        align-items: center;
+        justify-content: space-around;
     }
     .round-wrapper {
         display: flex;

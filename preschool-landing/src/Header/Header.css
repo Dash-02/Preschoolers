@@ -5,9 +5,9 @@
     align-items: center;
     height: 65px;
     width: 85%;
-
-    position: fixed;
-    z-index: 50;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.24);
+    /* position: fixed;
+    z-index: 50; */
 }
 
 .header {
@@ -27,7 +27,7 @@
     width: 35%;
 }
 
-.container-header::before {
+/* .container-header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -40,7 +40,7 @@
     border-radius: 0px 0px 10px 10px;
 
     padding: 0 5px;
-}
+} */
 
 .img-logo {
     width: 45px;
@@ -218,20 +218,12 @@ a:active {
     transform: translateX(0);
 }
 
-/* #popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    z-index: 999;
-} */
-body {
+/* ===== popup ===== */
+/* .no-scroll {
     overflow: hidden;
-  }
+  } */
   
-  .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -240,9 +232,9 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     z-index: 999;
-  }
+}
   
-  #popup {
+#popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -250,8 +242,9 @@ body {
     background-color: white;
     padding: 20px;
     z-index: 1000;
-  }
+}
   
+/* ===== media screens ====== */
 
 @media (width > 1900px) {
     .btn-login button {
