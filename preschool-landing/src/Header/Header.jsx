@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import './Header.css';
 import logo from '../assets/icons/logo.svg';
+import Auth from '../Auth/Auth.jsx';
+import imgX from '../assets/img/auth/x.svg';
 
 function Header() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openPopup = () => {
+        setIsOpen(true);
+    };
+
+    const closePopup = () => {
+        setIsOpen(false);
+    };
 
     return (
         <div className="container-header">
@@ -21,7 +33,7 @@ function Header() {
                 </nav>
                 <div className="btn-login">
                     <button>Войти в личный кабинет</button>
-                    <button>Зарегистрироваться</button>
+                    <button onClick={openPopup}>Зарегистрироваться</button>
                 </div>
                 <div className="menu">
                     <input type="checkbox" id="burger-checkbox" className="burger-checkbox"/>
@@ -33,11 +45,22 @@ function Header() {
                             <a href="#preschoolers">Детям</a>
                             <a href="#teacher">Преподавателям</a>
                             <button>Войти в личный кабинет</button>
-                            <button>Зарегистрироваться</button>
+                            <button onClick={openPopup}>Зарегистрироваться</button>
                         </div>
                         <div className="menu-bottom"></div>
                     </nav>
                 </div>
+                {isOpen && (
+                    <div className="backdrop">
+                    <div id="popup">
+                        <button className="btn-x" onClick={closePopup}>
+                            <img src={imgX} alt="x" />
+                        </button>
+                        <Auth />
+                    </div>
+
+                    </div>
+                )}
             </section>
         </div>
     )

@@ -18,11 +18,11 @@ function Home() {
                             Добро пожаловать на нашу платформу "Дай пять", где процесс обучения становится увлекательным и эффективным для самых маленьких. Мы предлагаем уникальные тесты и материалы, разработанные специально для дошкольного образования. Наши уроки помогут детям развивать навыки, осваивать новые знания и готовиться к школе, играя и веселясь. Давайте вместе откроем великий мир обучения!
                         </span>
                     </div>
-                    <div className="content-wrapper">
+                    <div className="home-content-wrapper">
                     <img src={imgArrow} alt="arrow" className="img-arrow" />
                         
                         <div className="wrapper_social_media">
-                            <button>Записаться на обучение</button>
+                            <button >Записаться на обучение</button>
                             <div className="social_media">
                                 <span>или написать:</span>
                                 <a href="#"><img src={tg} alt="telegram" /></a>
@@ -32,8 +32,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                
                 <img className="img-books" src={imgBooks} alt="books" />
+                
             </div>
         </section>
     )
