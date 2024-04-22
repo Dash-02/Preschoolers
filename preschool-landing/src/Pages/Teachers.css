@@ -6,8 +6,15 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
 
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.teacher-text {
+    width: 90%;
+
+    font-size: 18px;
 }
 
 .container {
@@ -28,14 +35,29 @@
 .list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.list_item {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+
+    font-size: 20px;
+    margin: 2%;
+}
+
+.check {
+    width: 85px;
+    height: 75px;
 }
 
 .author {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .btn-author {
@@ -51,5 +73,84 @@
     .man2 {
         width: 300px;
         height: 430px;
+    }
+}
+
+@media (width <= 1200px) {
+    .man {
+        display: none;
+    }
+    .list_item {
+        font-size: 16px;
+    }
+    .check {
+        width: 75px;
+        height: 65px;
+    }
+}
+
+@media (width <= 1080px) {
+    .teacher-text {
+        font-size: 15px;
+    }
+    .list_item {
+        font-size: 15px;
+    }
+}
+
+@media (width <= 720px) {
+    .teacher {
+        height: auto;
+    }
+    .teacher-text {
+        font-size: 14px;
+    }
+    .list_item {
+        font-size: 14px;
+    }
+    .btn-author {
+        margin-top: 10%;
+        width: 280px;
+        font-size: 14px;
+    }
+    .man2 {
+        width: 280px;
+        height: 390px;
+    }
+    .check {
+        width: 65px;
+        height: 55px;
+    }
+}
+
+@media (width <= 550px) {
+    .teacher-text {
+        font-size: 13px;
+    }
+    .list_item {
+        font-size: 13px;
+    }
+    .check {
+        width: 60px;
+        height: 50px;
+    }
+}
+
+@media (width <= 390px) {
+    .teacher-text {
+        font-size: 10px;
+        text-align: center;
+    }
+    .list_item {
+        font-size: 10px;
+    }
+    .btn-author {
+        font-size: 12px;
+        width: 250px;
+        height: 40px;
+    }
+    .check {
+        width: 45px;
+        height: 35px;
     }
 }
