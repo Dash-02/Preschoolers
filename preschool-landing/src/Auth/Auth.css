@@ -1,0 +1,58 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+#popup {
+    background: linear-gradient(to bottom, #9F4CEB, #8BC0FF);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .btn-x {
+        width: 45px;
+        height: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #D660CC;
+    }
+}
+
+.img-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+
+    flex-wrap: wrap;
+}
+
+.people_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1%;
+
+    img {
+        width: auto;
+        height: 280px;
+    }
+}
+
+button {
+    width: 280px;
+    height: 60px;
+
+    font-size: 18px;
+}

@@ -1,0 +1,55 @@
+.auth_parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    margin-bottom: 10%;
+}
+
+.wrapper_radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFEDB5;
+    border-radius: 20px;
+
+    color: #9F4CEB;
+    span {
+        font-size: 14x;
+    }
+}
+
+.radio {
+    width: 100%;
+    height: 20px;
+}
+
+input {
+    background: #FFEDB5;
+    border-style: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+
+    color: #9F4CEB;
+    outline: #D660CD;
+
+    padding: 5px;
+}
+
+input[type="date"]:focus {
+    border-color: #D660CD;
+    outline: #D660CD;
+}
+
+input::placeholder {
+    color: #9F4CEB;
+}
