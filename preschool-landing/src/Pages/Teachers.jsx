@@ -15,7 +15,7 @@ function Teacher() {
                     Наша платформа онлайн-образования всегда открыта к новым идеям для создания уникального контента.
                 </span>
             </div>
-            <div className="container">
+            <div className="teacher-container">
                 <img className="man" src={imgMan} alt="man" />
                 <div className="list">
                 <div className="list_item">

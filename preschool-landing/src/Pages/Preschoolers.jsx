@@ -19,6 +19,8 @@ import mobArr3 from '../assets/img/mob_arr3.png';
 function Preschooler() {
     return (
         <section id="preschoolers" className="preschooler">
+            <div className="schema-wrapper">
+
             <div className="preschool-text">
                 <h1>Чем будет заниматься <span className="yellow-text">ребенок</span> в "Дай пять"?</h1>
             </div>
@@ -72,6 +74,7 @@ function Preschooler() {
                     </div>
                 </div>
                 </div>
+            </div>
             </div>
         </section>
     )

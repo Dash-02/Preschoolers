@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.schema-wrapper {
+    width: 90%;
+}
+
 h1 {
     margin-bottom: 5%;
 }
@@ -69,7 +73,6 @@ h1 {
 }
 
 .preschool-text {
-    width: 85%;
     text-align: center;
 }
 
@@ -140,6 +143,17 @@ h1 {
             font-size: 12px;
         }
     }
+    .imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .round-wrapper {
+        justify-content: center;
+    }
+    .imgs {
+        width: 50%;
+    }
 }
 
 @media (width <= 550px) {
@@ -150,6 +164,9 @@ h1 {
             font-size: 9px;
         }
     }
+    .imgs {
+        width: 40%;
+    }
     img {
         width: 50%;
     }
@@ -157,8 +174,8 @@ h1 {
 
 @media (width <= 390px) {
     .round {
-        width: 130px;
-        height: 130px;
+        width: 125px;
+        height: 125px;
     }
     .img_arrow {
         display: none;
