@@ -66,7 +66,7 @@ function Footer() {
 
             </div>
             <div className="footer-line"></div>
-            <span>© 2024 Дай пять</span>
+            <span className="footer_span">© 2024 Дай пять</span>
         </section>
     )
 }
