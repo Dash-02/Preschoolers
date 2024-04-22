@@ -94,6 +94,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    span {
+        padding: 1%;
+    }
 }
 
 @media (width <= 1500px) {

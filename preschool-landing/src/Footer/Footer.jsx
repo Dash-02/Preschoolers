@@ -35,10 +35,10 @@ function Footer() {
                 </article>
                 <article className="about-platform">
                     <p>О платформе</p>
-                    <a href="Main">Главная</a>
-                    <a href="parents">Родителям</a>
-                    <a href="preschooler">Детям</a>
-                    <a href="teacher">Преподавателям</a>
+                    <a href="#home">Главная</a>
+                    <a href="#parents">Родителям</a>
+                    <a href="#preschoolers">Детям</a>
+                    <a href="#teacher">Преподавателям</a>
                 </article>
                 <article className="contacts">
                     <div className="location">

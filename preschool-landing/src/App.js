@@ -8,11 +8,11 @@ import Footer from './Footer/Footer.jsx';
 function App() {
   return (
     <div>
-      <Home/>
-      <Parents/>
-      <Preschooler/>
-      <Teacher/>
-      <Footer/>
+      <Home />
+      <Parents />
+      <Preschooler />
+      <Teacher />
+      <Footer />
     </div>
   );
 }

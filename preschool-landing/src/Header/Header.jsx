@@ -3,6 +3,7 @@ import './Header.css';
 import logo from '../assets/icons/logo.svg';
 
 function Header() {
+
     return (
         <div className="container-header">
             <section className="header">
@@ -15,7 +16,7 @@ function Header() {
                 <nav>
                     <a href="#home">Главная</a>
                     <a href="#parents">Родителям</a>
-                    <a href="#preschooler">Детям</a>
+                    <a href="#preschoolers">Детям</a>
                     <a href="#teacher">Преподавателям</a>
                 </nav>
                 <div className="btn-login">
@@ -29,7 +30,7 @@ function Header() {
                         <div className="menu-items">
                             <a href="#home">Главная</a>
                             <a href="#parents">Родителям</a>
-                            <a href="#preschooler">Детям</a>
+                            <a href="#preschoolers">Детям</a>
                             <a href="#teacher">Преподавателям</a>
                             <button>Войти в личный кабинет</button>
                             <button>Зарегистрироваться</button>
@@ -38,7 +39,6 @@ function Header() {
                     </nav>
                 </div>
             </section>
-            {/* <div className="line"></div> */}
         </div>
     )
 }

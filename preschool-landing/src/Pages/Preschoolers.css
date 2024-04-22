@@ -6,8 +6,27 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 5%;
+}
+
+.schema {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+}
+
+.schema-content {
+    
+}
+
+.round-wrapper {
+    display: flex;
 }
 
 .round {
@@ -16,4 +35,141 @@
 
     background-color: #FFEDB5;
     border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .img_pencil {
+        width: 75%;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+.img_arrow2 {
+    width: 100px;
+}
+
+
+.img_arrow1 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 200px;
+    } */
+}
+
+.round span {
+    color: #9F4CEB;
+    font-size: 20px;
+}
+
+.preschool-text {
+    width: 85%;
+    text-align: center;
+}
+
+@media (width > 390px) {
+    .mob_arrow {
+        display: none;
+    }
+}
+@media (width < 1580px) {
+    .img_arrow1 {
+        display: none;
+    }
+    .img_arrow2 {
+        display: none;
+    }
+    .img_arrow3 {
+        display: none;
+    }
+}
+
+@media (width <= 1400px) {
+    .round {
+        width: 250px;
+        height: 250px;
+        span {
+            font-size: 16px;
+        }
+    }
+    img {
+        width: 80%;
+    }
+}
+
+@media (width <= 1200px) {
+    .round {
+        width: 200px;
+        height: 200px;
+        span {
+            font-size: 14px;
+        }
+    }
+    img {
+        width: 60%;
+    }
+    .schema {
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .round-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (width <= 1080px) {
+    .preschooler {
+        height: auto;
+    }
+}
+
+@media (width <= 720px) {
+    .round {
+        width: 180px;
+        height: 180px;
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (width <= 550px) {
+    .round {
+        width: 150px;
+        height: 150px;
+        span {
+            font-size: 10px;
+        }
+    }
+    img {
+        width: 50%;
+    }
+}
+
+@media (width <= 390px) {
+    .round {
+        width: 130px;
+        height: 130px;
+    }
+    .img_arrow {
+        display: none;
+    }
+    .mob_arrow {
+        width: 20%;
+    }
+    .imgs {
+        width: 55%;
+    }
+    .img_p {
+        width: 55%;
+    }
 }

@@ -6,7 +6,7 @@ import imgAcadem from '../assets/img/academic.png';
 
 function Parents() {
     return (
-        <section className="parents">
+        <section id="parents" className="parents">
             <div className="parents-text">
             <h1>Что предлагает наша <span className="yellow-text">онлайн-платформа</span>?</h1>
                 <span>
