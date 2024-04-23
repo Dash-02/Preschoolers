@@ -11,14 +11,14 @@
 
 #popup {
     background: linear-gradient(to bottom, #9F4CEB, #8BC0FF);
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
 
     .btn-x {
         width: 35px;
         height: 35px;
-
+        padding: 2% 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,7 +73,7 @@
 }
 
 button {
-    width: 280px;
+    width: 260px;
     height: 60px;
 
     font-size: 18px;
@@ -103,17 +103,13 @@ button {
             font-size: 24px;
         }
         button {
-            width: 260px;
             height: 40px;
-
             font-size: 14px;
         }
     }
     #popup1 {
         button {
-            width: 260px;
             height: 40px;
-
             font-size: 14px;
         }
     }
