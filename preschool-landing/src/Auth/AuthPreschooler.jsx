@@ -33,7 +33,7 @@ function AuthPreschooler() {
 
 		try {
 			const { data } = await axios.post(
-				`${env.BACKEND_URL}/auth_parent/register`,
+				`${env.BACKEND_URL}/auth_student/register`,
 				{
 					fullName: formData.fullName,
 					fullNameParent: formData.fullNameParent,
@@ -48,7 +48,8 @@ function AuthPreschooler() {
 
 			// Проверяем успешность регистрации
 			if (data?.token) {
-				window.location.href = 'https://deploy-panel-for-learn.vercel.app/login'
+				console.log(data)
+				// window.location.href = 'https://deploy-panel-for-learn.vercel.app/login'
 			} else {
 				setError(data.message || 'Ошибка регистрации')
 			}

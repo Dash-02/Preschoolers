@@ -4,7 +4,6 @@ import env from 'react-dotenv'
 import imgDad from '../assets/img/auth/dad.png'
 import imgMom from '../assets/img/auth/mom.png'
 import './AuthParent.css'
-
 function AuthParent() {
 	const [formData, setFormData] = useState({
 		fullName: '',
