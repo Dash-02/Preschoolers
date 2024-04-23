@@ -1,6 +1,6 @@
 .footer {
     background: #282846;
-    height: 70vh;
+    height: auto;
 
     color: #fff;
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -88,12 +88,6 @@
 
 .footer_span {
     margin-bottom: 5%;
-}
-
-@media (width <= 1500px) {
-    .footer {
-        height: auto;
-    }
 }
 
 @media (width <= 1400px) {

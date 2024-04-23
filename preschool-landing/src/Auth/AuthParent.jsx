@@ -115,7 +115,7 @@ function AuthParent() {
                         onChange={handleChange}
                     />
                 </div>
-
+                
                 <button onClick={handleSubmit}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </div>
 
