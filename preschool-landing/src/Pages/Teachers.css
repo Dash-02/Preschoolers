@@ -1,6 +1,6 @@
 .teacher {
     background: linear-gradient(to bottom, #6C8AD5, #8BC0FF);
-    height: 100vh;
+    height: auto;
 
     color: #fff;
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -78,16 +78,19 @@
     }
 }
 
-@media (width <= 1200px) {
-    .man {
-        display: none;
-    }
+@media (width <= 1366px) {
     .list_item {
         font-size: 16px;
     }
     .check {
         width: 75px;
         height: 65px;
+    }
+}
+
+@media (width <= 1200px) {
+    .man {
+        display: none;
     }
 }
 
@@ -101,6 +104,9 @@
 }
 
 @media (width <= 720px) {
+    .teacher-container {
+        width: 95%;
+    }
     .teacher {
         height: auto;
     }
@@ -136,9 +142,19 @@
         width: 60px;
         height: 50px;
     }
+    .list span {
+        font-size: 12px;
+    }
+    .btn-author {
+        width: 250px;
+    }
 }
 
 @media (width <= 390px) {
+    .teacher-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .teacher-text {
         font-size: 10px;
         text-align: center;
@@ -148,7 +164,7 @@
     }
     .btn-author {
         font-size: 12px;
-        width: 250px;
+        width: 230px;
         height: 40px;
     }
     .check {

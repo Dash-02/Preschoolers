@@ -39,14 +39,14 @@ function Auth() {
 
     const renderAuthComponent = () => {
         switch (selectedAuth) {
-            case 'parent':
-                return <AuthParent />;
-            case 'teacher':
-                return <AuthTeacher />;
-            case 'preschooler':
-                return <AuthPreschooler />;
-            default:
-                return null;
+          case 'parent':
+            return <div className="popup_parent"><AuthParent /></div>;
+          case 'teacher':
+            return <div className="popup_teacher"><AuthTeacher /></div>;
+          case 'preschooler':
+            return <div className="popup_preschooler"><AuthPreschooler /></div>;
+          default:
+            return null;
         }
     };
 
@@ -74,7 +74,7 @@ function Auth() {
                 </div>
             </div>
             {isOpen && (
-                <div id="popup">
+                <div id="popup1">
                     <button className="btn-x" onClick={closePopup}>
                         <img src={imgX} alt="x" />
                     </button>

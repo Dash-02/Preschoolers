@@ -154,6 +154,12 @@
 @media (width <= 550px) {
     .contacts {
         width: 50%;
+        img {
+            width: 18px;
+            height: 18px;
+
+            margin: 1%;
+        }
     }
 }
 

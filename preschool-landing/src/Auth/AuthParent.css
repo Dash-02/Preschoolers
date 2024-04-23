@@ -1,7 +1,18 @@
+/* #popup {
+    .auth_parent {
+        background: linear-gradient(to bottom, #9F4CEB, #D660CD);
+    } 
+
+    background: linear-gradient(to bottom, #9F4CEB, #D660CD);
+} */
+
 .auth_parent {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    /* background: linear-gradient(to bottom, #9F4CEB, #D660CD); */
 }
 
 .input-item {

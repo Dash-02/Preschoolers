@@ -33,22 +33,22 @@ function Teacher() {
             <div className="teacher-container">
                 <img className="man" src={imgMan} alt="man" />
                 <div className="list">
-                <div className="list_item">
-                    <img className="check" src={imgMark} alt="check-mark" />
-                    <span>Зарегистрируйтесь на сайте как преподаватель</span>
-                </div>
-                <div className="list_item">
-                    <img className="check" src={imgMark} alt="check-mark" />
-                    <span>Предоставьте необходимые данные и дождитесь подтверждения</span>
-                </div>
-                <div className="list_item">
-                    <img className="check" src={imgMark} alt="check-mark" />
-                    <span>Создавайте собственные уроки и тесты</span>
-                </div>
-                <div className="list_item">
-                    <img className="check" src={imgMark} alt="check-mark" />
-                    <span>Находите учеников</span>
-                </div>
+                    <div className="list_item">
+                        <img className="check" src={imgMark} alt="check-mark" />
+                        <span>Зарегистрируйтесь на сайте как преподаватель</span>
+                    </div>
+                    <div className="list_item">
+                        <img className="check" src={imgMark} alt="check-mark" />
+                        <span>Предоставьте необходимые данные и дождитесь подтверждения</span>
+                    </div>
+                    <div className="list_item">
+                        <img className="check" src={imgMark} alt="check-mark" />
+                        <span>Создавайте собственные уроки и тесты</span>
+                    </div>
+                    <div className="list_item">
+                        <img className="check" src={imgMark} alt="check-mark" />
+                        <span>Находите учеников</span>
+                    </div>
                 </div>
                 <div className="author">
                     <button className="btn-author" onClick={openPopupT}>

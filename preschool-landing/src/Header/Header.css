@@ -25,6 +25,10 @@
     justify-content: space-between;
     align-items: center;
     width: 35%;
+
+    button {
+        font-size: 15px;
+    }
 }
 
 /* .container-header::before {
@@ -83,6 +87,8 @@ button:active {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+
+    font-size: 15px;
 }
 
 nav {
@@ -243,7 +249,7 @@ a:active {
     padding: 20px;
     z-index: 1000;
 }
-  
+
 /* ===== media screens ====== */
 
 @media (width > 1900px) {
@@ -282,16 +288,19 @@ a:active {
     }
 }
 
-@media (width <= 1200px) {
+@media (width <= 1366px) {
     .btn-login button {
-        font-size: 12px;
+        font-size: 11px;
+        a {
+            font-size: 11px;
+        }
     }
 
     .logo {
         width: 55%;
     }
-    .btn-login button {
-        font-size: 11px;
+    .btn-logo {
+        font-size: 12px;
     }
 }
 
@@ -324,6 +333,8 @@ a:active {
     .container-header {
         position: fixed;
         z-index: 50;
+
+        background:#8BC0FF;
     }
     .header {
         z-index: 100;
@@ -334,10 +345,15 @@ a:active {
     .btn-login {
         display: none;
     }
-
     .logo {
         width: 25%;
-    }   
+    }
+    .btn-x {
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
 }
 
 @media (width <= 520px) {
