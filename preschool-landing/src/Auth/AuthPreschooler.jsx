@@ -49,7 +49,7 @@ function AuthPreschooler() {
 			// Проверяем успешность регистрации
 			if (data?.token) {
 				console.log(data)
-				// window.location.href = 'https://deploy-panel-for-learn.vercel.app/login'
+				window.location.href = 'https://deploy-panel-for-learn.vercel.app/login'
 			} else {
 				setError(data.message || 'Ошибка регистрации')
 			}
