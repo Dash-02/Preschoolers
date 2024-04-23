@@ -36,7 +36,7 @@ function AuthPreschooler() {
 				`${env.BACKEND_URL}/auth_student/register`,
 				{
 					fullName: formData.fullName,
-					fullNameParent: formData.fullNameParent,
+					name_parent: formData.fullNameParent,
 					email: formData.email,
 					gender: formData.gender,
 					password: formData.password,
