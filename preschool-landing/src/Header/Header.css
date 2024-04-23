@@ -248,6 +248,9 @@ a:active {
     background-color: white;
     padding: 20px;
     z-index: 1000;
+
+    height: 80%;
+    overflow-y: auto;
 }
 
 /* ===== media screens ====== */
