@@ -77,7 +77,14 @@ h1 {
 		display: none;
 	}
 }
-@media (width < 1580px) {
+@media (width <= 1700px) {
+    .schema {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media (width <= 1600px) {
 	.img_arrow1 {
 		display: none;
 	}
@@ -86,11 +93,6 @@ h1 {
 	}
 	.img_arrow3 {
 		display: none;
-	}
-	.schema {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
 	}
 	.round-wrapper {
 		display: flex;

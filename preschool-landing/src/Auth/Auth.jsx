@@ -16,25 +16,21 @@ function Auth() {
     const openPopupP = () => {
         setSelectedAuth('parent');
         setIsOpen(true);
-        document.body.classList.add('no-scroll');
     };
 
     const openPopupT = () => {
         setSelectedAuth('teacher');
         setIsOpen(true);
-        document.body.classList.add('no-scroll');
     };
 
     const openPopupU = () => {
         setSelectedAuth('preschooler');
         setIsOpen(true);
-        document.body.classList.add('no-scroll');
     };
 
     const closePopup = () => {
         setIsOpen(false);
         setSelectedAuth(null);
-        document.body.classList.remove('no-scroll');
     };
 
     const renderAuthComponent = () => {

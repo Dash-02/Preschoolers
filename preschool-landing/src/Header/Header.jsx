@@ -44,7 +44,7 @@ function Header() {
                             <a href="#parents">Родителям</a>
                             <a href="#preschoolers">Детям</a>
                             <a href="#teacher">Преподавателям</a>
-                            <button>Войти в личный кабинет</button>
+                            <button><a href="https://deploy-panel-for-learn.vercel.app/login">Войти в личный кабинет</a></button>
                             <button onClick={openPopup}>Зарегистрироваться</button>
                         </div>
                         <div className="menu-bottom"></div>
