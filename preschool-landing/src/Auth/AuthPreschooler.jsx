@@ -36,7 +36,7 @@ function AuthPreschooler() {
 				`${env.BACKEND_URL}/auth_student/register`,
 				{
 					fullName: formData.fullName,
-					name_parent: formData.fullNameParent,
+					name_parent: "f",
 					email: formData.email,
 					gender: formData.gender,
 					password: formData.password,
@@ -74,17 +74,6 @@ function AuthPreschooler() {
 						name='fullName'
 						placeholder='Иванов Иван Иванович'
 						value={formData.fullName}
-						onChange={handleChange}
-					/>
-				</div>
-
-				<div className='input-item'>
-					<span>ФИО родителя</span>
-					<input
-						type='text'
-						name='fullNameParent'
-						placeholder='Иванов Иван Иванович'
-						value={formData.fullNameParent}
 						onChange={handleChange}
 					/>
 				</div>
