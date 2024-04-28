@@ -16,6 +16,20 @@ function Header() {
         setIsOpen(false);
     };
 
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+    const openMenu = () => {
+        isOpenMenu(true);
+    };
+
+    const closeOpenMenu = () => {
+        isOpenMenu(false);
+    };
+
+    const closeMenu = () => {
+        isOpenMenu(false);
+    };
+
     return (
         <div className="container-header">
             <section className="header">
@@ -40,10 +54,10 @@ function Header() {
                     <label htmlFor="burger-checkbox" className="burger"></label>
                     <nav className="menu-list">
                         <div className="menu-items">
-                            <a href="#home">Главная</a>
-                            <a href="#parents">Родителям</a>
-                            <a href="#preschoolers">Детям</a>
-                            <a href="#teacher">Преподавателям</a>
+                            <a href="#home" onClick={closeMenu} >Главная</a>
+                            <a href="#parents" onClick={closeMenu}>Родителям</a>
+                            <a href="#preschoolers" onClick={closeMenu}>Детям</a>
+                            <a href="#teacher" onClick={closeMenu}>Преподавателям</a>
                             <button><a href="https://deploy-panel-for-learn.vercel.app/login">Войти в личный кабинет</a></button>
                             <button onClick={openPopup}>Зарегистрироваться</button>
                         </div>
